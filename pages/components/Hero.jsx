@@ -12,7 +12,7 @@ function Hero({ img, heading, subHeading, children }) {
         alt="alr"
         className="absolute top-0 left-0"
       />
-      <div className="w-full h-full absolute top-0 left-0 bg-[rgba(128,128,128,0.81)] z-10 grid place-items-center  ">
+      <div className="w-full h-full absolute top-0 left-0 bg-[rgba(128,128,128,0.87)] z-10 grid place-items-center  ">
         <div className="w-[60%]">
           <h1 className="font-inter text-orange text-[35px] leading-[42.36px] mb-[73px]">
             {heading}
