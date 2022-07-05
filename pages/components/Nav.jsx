@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <div className="h-[83px] flex justify-around items-center">
       <h1 className="font-rubik text-[25px] leading-[30.26px] text-[#FFC222]">
-        Restuarant
+        <Link href="/">Restuarant</Link>
       </h1>
       <ul className="flex gap-[82px] items-center font-inter text-[20px] leading-[24px] ">
         <li>
@@ -17,7 +17,7 @@ const Nav = () => {
         </li>
         <li>
           {" "}
-          <a> Product </a>
+          <Link href="/products"> Product </Link>
         </li>
         <li>
           {" "}

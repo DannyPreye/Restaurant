@@ -11,7 +11,6 @@ const index = () => {
       <HomeHero />
       <CardSection />
       <Booking img={ok} />
-      <Footer />
     </div>
   )
 }

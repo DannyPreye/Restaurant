@@ -15,7 +15,6 @@ const about = () => {
         }
       />
       <Booking img={bg} />
-      <Footer />
     </>
   );
 };

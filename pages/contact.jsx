@@ -14,7 +14,6 @@ const contact = () => {
         }
       />
       <Booking img={avatar} />
-      <Footer />
     </>
   );
 };
