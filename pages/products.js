@@ -3,6 +3,7 @@ import Image from "next/image";
 import Footer from "./components/Footer";
 import { avatar } from "../public/Pics";
 import Product from "./components/Product";
+
 const products = () => {
   return (
     <>
