@@ -1,6 +1,7 @@
 import React from "react";
 import { BsSearch, BsCartCheckFill } from "react-icons/bs";
 import { FaUserCircle } from "react-icons/fa";
+import Link from "next/link";
 
 const Nav = () => {
   return (
@@ -9,10 +10,24 @@ const Nav = () => {
         Restuarant
       </h1>
       <ul className="flex gap-[82px] items-center font-inter text-[20px] leading-[24px] ">
-        <li>Home</li>
-        <li>Product</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <a> Product </a>
+        </li>
+        <li>
+          {" "}
+          <Link href={"/about"}>
+            <a> About </a>
+          </Link>
+        </li>
+        <li>
+          <Link href="./contact"> Contact</Link>
+        </li>
       </ul>
       <ul className="flex gap-[68px] items-center">
         <li className="w-[40px] h-[40px] rounded-full grid place-items-center bg-[#FFC222] ">
