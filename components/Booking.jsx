@@ -18,18 +18,18 @@ const Booking = ({ img }) => {
               type="text"
               name="name"
               placeholder="Name"
-              className="w-full rounded-[20px] h-[68px] p-[23px] leading-[30px] text-[20px] border-[1px] mt-[49px]"
+              className=" w-full  rounded-[20px] h-[68px] p-[23px] leading-[30px] text-[20px] border-[1px] mt-[49px]"
             />
-            <div className="flex mt-[37px] gap-[30px]">
+            <div className="flex mt-[37px] lg:flex-nowrap flex-wrap gap-[30px]">
               <input
                 type="date"
                 name="date"
-                className="max-w-[288px] h-[68px] rounded-[20px] border-[1px] p-[23px]  leading-[30px] text-[20px]  "
+                className="w-full lg:max-w-[288px]  h-[68px] rounded-[20px] border-[1px] p-[23px]  leading-[30px] text-[20px]  "
               />
               <input
                 type="time"
                 name="time"
-                className="max-w-[288px] h-[68px] rounded-[20px] border-[1px] p-[23px]  leading-[30px] text-[20px]  "
+                className="w-full lg:max-w-[288px] h-[68px] rounded-[20px] border-[1px] p-[23px]  leading-[30px] text-[20px]  "
               />
             </div>
             <input

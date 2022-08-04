@@ -7,12 +7,14 @@ import { AnimatePresence } from "framer-motion"
 
 function MyApp({ Component, pageProps }) {
   return <AnimatePresence>
-    <Nav />
-    <Head>
-      <title>Restaurant</title>
-    </Head>
-    <Component {...pageProps} />
-    <Footer />
+    <div className='w-screen'>
+      <Nav />
+      <Head>
+        <title>Restaurant</title>
+      </Head>
+      <Component {...pageProps} />
+      <Footer />
+    </div>
   </AnimatePresence>
 }
 
