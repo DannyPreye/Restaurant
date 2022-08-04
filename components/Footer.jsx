@@ -14,20 +14,20 @@ const Footer = () => {
       </div>
       <hr className="border-green" />
       <div className="grid place-items-center mt-[105px]">
-        <div className="w-[90%] flex justify-between">
+        <div className="w-[90%] flex justify-between flex-wrap gap-10">
           <FooterNav heading={"ADDRESS"}>
-            <p className="font-[600] mt-[30px] text-[18px]  text-white">
+            <p className="font-[600] mt-[20px] text-[14px]  text-white">
               570 8th Ave, <br /> <br /> New York, NY 10018 <br /> United States
             </p>
           </FooterNav>
           <FooterNav heading={"BOOKING"}>
-            <p className="font-[500] mt-[30px] text-[18px]  text-white">
+            <p className="font-[500] mt-[30px] text-[14px]  text-white">
               Dogfood och Sliders <br /> foodtruck. <br /> Under Om oss kan ni
               läsa
             </p>
           </FooterNav>
           <FooterNav heading={"OPENING HOURS"}>
-            <p className="font-[800] mt-[30px] text-[18px]  text-white">
+            <p className="font-[800] mt-[30px] text-[14px]  text-white">
               Monday-Friday: 8AM-4PM <br />
               Saturday: 9AM-5PM
             </p>
@@ -49,12 +49,12 @@ const Footer = () => {
       </div>
       <div className="h-[60px] bg-green mt-[77px] grid place-items-center">
         <div className="w-[90%] flex h-[24px] items-center ">
-          <p className=" ">
-            <span className="text-[15px]    font-inter text-white border-r-[2px] pr-[2px]">
+          <p className="text-[10px] lg:text-[12px]  ">
+            <span className="   font-inter text-white border-r-[2px] pr-[2px]">
               {" "}
               Copyright {today.getFullYear()}
             </span>{" "}
-            <span className="font-rubik text-[15px] leading-[30.26px] text-[#FFC222] mt-[33px]">
+            <span className="font-rubik text-[12px] leading-[30.26px] text-[#FFC222] mt-[33px]">
               Restuarant
             </span>
             <span className="font-[600] text-white"> by Olawoyin Daniel</span>

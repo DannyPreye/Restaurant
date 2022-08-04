@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
+import { motion } from "framer-motion";
 const Booking = ({ img }) => {
   return (
     <div className="w-screen  grid place-items-center mb-[182px]">
-      <div className="w-[85%] flex mt-[170px] gap-[100px] items-center">
-        <div className="w-[546px] h-[80%]">
+      <div className="w-[85%] flex mt-[170px]  gap-[100px] items-center flex-wrap">
+        <div className="lg:w-[546px] w-[320px]  h-[80%]">
           <Image src={img} layout="responsive" alt="girl" />
         </div>
         <div className="flex-1">
@@ -23,12 +24,12 @@ const Booking = ({ img }) => {
               <input
                 type="date"
                 name="date"
-                className="w-[288px] h-[68px] rounded-[20px] border-[1px] p-[23px]  leading-[30px] text-[20px]  "
+                className="max-w-[288px] h-[68px] rounded-[20px] border-[1px] p-[23px]  leading-[30px] text-[20px]  "
               />
               <input
                 type="time"
                 name="time"
-                className="w-[288px] h-[68px] rounded-[20px] border-[1px] p-[23px]  leading-[30px] text-[20px]  "
+                className="max-w-[288px] h-[68px] rounded-[20px] border-[1px] p-[23px]  leading-[30px] text-[20px]  "
               />
             </div>
             <input
@@ -43,10 +44,10 @@ const Booking = ({ img }) => {
               cols="30"
               rows="10"
               placeholder="Your Message"
-              className=" p-[23px] h-[147px] w-full border-[1px] rounded-[20px] mt-[26px]"
+              className=" p-[23px] h-[147px] w-full border-[1px] resize-none rounded-[20px] mt-[26px]"
             ></textarea>
             <div className="grid place-items-center">
-              <button className="w-[368px] h-[58px] rounded-[20px] bg-orange pt-[12px] pb-[10px] px-[82px] mt-[28px] font-[600] text-[20px] leading-[36.31px]">
+              <button className=" :max-w-[368px] h-[58px] rounded-[20px] bg-orange pt-[12px] pb-[10px] px-[82px] mt-[28px] font-[600] text-[20px] leading-[36.31px]">
                 Send Request
               </button>
             </div>

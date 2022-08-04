@@ -26,7 +26,7 @@ const products = () => {
         <h1 className="text-[30px] font-inter leading-[54.46px] mt-[70px] w-[80%] ">
           Top Recipes
         </h1>
-        <div className="w-[80%]  grid grid-cols-2 gap-[77px]  mb-[156px] mt-[62px] ">
+        <div className="w-[80%]  grid lg:grid-cols-2 gap-[77px]  mb-[156px] mt-[62px] ">
           <Product />
           <Product />
           <Product />
