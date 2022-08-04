@@ -1,12 +1,18 @@
 import React from "react";
-import Hero from "./components/Hero";
+import Hero from "../components/Hero";
 import { bg } from "../public/Pics";
-import Booking from "./components/Booking";
-import Footer from "./components/Footer";
+import Booking from "../components/Booking";
+
+import { motion } from "framer-motion";
 
 const about = () => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 2 }}
+    >
       <Hero
         img="/assets/bg.png"
         heading="ABOUT US"
@@ -15,7 +21,7 @@ const about = () => {
         }
       />
       <Booking img={bg} />
-    </>
+    </motion.div>
   );
 };
 

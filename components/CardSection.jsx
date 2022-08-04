@@ -1,15 +1,15 @@
 import React from "react";
 import Card from "./Card";
-import { pot, face, coffee } from "../../public/Pics";
+import { pot, face, coffee } from "../public/Pics";
 
 const CardSection = () => {
   return (
     <div className="w-screen  grid place-items-center">
       <div className="w-[60%] mt-[104px] grid place-items-center ">
-        <h3 className="font-inter text-[41px] leading-[49.62px] ">
+        <h3 className="font-inter text-[27px] leading-[49.62px] ">
           Best way to eat healthy food
         </h3>
-        <p className="mt-[25px] text-[25px] leading-[30.26px]  font-[500] w-[822px] grid place-items-center">
+        <p className="mt-[25px] text-[18px] leading-[30.26px]  font-[500] w-[822px] grid place-items-center">
           Making a reservation at Délicious restaurant is easy and takes just a
           couple of minutes.
         </p>

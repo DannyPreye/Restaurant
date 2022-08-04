@@ -9,7 +9,7 @@ const Booking = ({ img }) => {
           <Image src={img} layout="responsive" alt="girl" />
         </div>
         <div className="flex-1">
-          <h2 className="font-[600] text-[35px] leading-[42.36px] text-center  ">
+          <h2 className="font-[600] text-[30px]  text-center  ">
             Book a table
           </h2>
           <form action="">
@@ -17,25 +17,25 @@ const Booking = ({ img }) => {
               type="text"
               name="name"
               placeholder="Name"
-              className="w-full rounded-[20px] h-[68px] p-[23px] leading-[30px] text-[25px] border-[1px] mt-[49px]"
+              className="w-full rounded-[20px] h-[68px] p-[23px] leading-[30px] text-[20px] border-[1px] mt-[49px]"
             />
             <div className="flex mt-[37px] gap-[30px]">
               <input
                 type="date"
                 name="date"
-                className="w-[288px] h-[68px] rounded-[20px] border-[1px] p-[23px]  leading-[30px] text-[25px]  "
+                className="w-[288px] h-[68px] rounded-[20px] border-[1px] p-[23px]  leading-[30px] text-[20px]  "
               />
               <input
                 type="time"
                 name="time"
-                className="w-[288px] h-[68px] rounded-[20px] border-[1px] p-[23px]  leading-[30px] text-[25px]  "
+                className="w-[288px] h-[68px] rounded-[20px] border-[1px] p-[23px]  leading-[30px] text-[20px]  "
               />
             </div>
             <input
               type="tel"
               name="phone"
               placeholder="Phone No:"
-              className="w-full rounded-[20px] h-[68px] p-[23px] leading-[30px] text-[25px] border-[1px] mt-[26px]"
+              className="w-full rounded-[20px] h-[68px] p-[23px] leading-[30px] text-[20px] border-[1px] mt-[26px]"
             />
             <textarea
               name=""
@@ -46,7 +46,7 @@ const Booking = ({ img }) => {
               className=" p-[23px] h-[147px] w-full border-[1px] rounded-[20px] mt-[26px]"
             ></textarea>
             <div className="grid place-items-center">
-              <button className="w-[368px] h-[58px] rounded-[20px] bg-orange pt-[12px] pb-[10px] px-[82px] mt-[28px] font-[600] text-[30px] leading-[36.31px]">
+              <button className="w-[368px] h-[58px] rounded-[20px] bg-orange pt-[12px] pb-[10px] px-[82px] mt-[28px] font-[600] text-[20px] leading-[36.31px]">
                 Send Request
               </button>
             </div>
