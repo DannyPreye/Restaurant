@@ -8,7 +8,7 @@ const Product = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.2 }}
-      className="max-w-[520px] h-[248px] rounded-[20px] border-[1px] border-[#c4c4c4] grid place-items-center"
+      className="w-[80%] lg:max-w-[520px] h-[248px] rounded-[20px] border-[1px] border-[#c4c4c4] grid place-items-center"
     >
       <div className="flex w-[95%] h-[90%] rounded-[20px] bg-[#FFF9E9] p-[21px]">
         <Image alt="" src="/assets/food.png" width={153.6} height={149.26} />

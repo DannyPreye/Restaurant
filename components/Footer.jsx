@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
       <hr className="border-green" />
       <div className="grid place-items-center mt-[105px]">
-        <div className="w-[90%] flex justify-between flex-wrap gap-10">
+        <div className="w-[90%] flex justify-center lg:justify-between flex-wrap gap-10">
           <FooterNav heading={"ADDRESS"}>
             <p className="font-[600] mt-[20px] text-[14px]  text-white">
               570 8th Ave, <br /> <br /> New York, NY 10018 <br /> United States
@@ -33,7 +33,7 @@ const Footer = () => {
             </p>
           </FooterNav>
           <FooterNav heading={"FOLLOW US"}>
-            <div className="flex gap-[16px]">
+            <div className="flex gap-[16px] mt-[10px] lg:mt-0">
               <div className="w-[40px] h-[40px] bg-white rounded-full grid place-items-center">
                 <AiFillLinkedin className="w-[20px] h-[20px]" />
               </div>
