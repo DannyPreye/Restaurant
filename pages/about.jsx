@@ -14,7 +14,7 @@ const about = () => {
       transition={{ duration: 2 }}
     >
       <Hero
-        img="/assets/bg.png"
+        img="/assets/pizzaGirl.jpg"
         heading="ABOUT US"
         subHeading={
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem pariatur nisi, quis porro, sed molestiae quae possimus dignissimos reiciendis rerum voluptates amet eligendi et sunt veniam, vitae dicta culpa? Corrupti."

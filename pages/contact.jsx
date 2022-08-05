@@ -14,7 +14,7 @@ const contact = () => {
       transition={{ duration: 2 }}
     >
       <Hero
-        img="/assets/bg.png"
+        img="/assets/pizzaGirl.jpg"
         heading="CONTACT US"
         subHeading={
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsSearch, BsCartCheckFill } from "react-icons/bs";
 import { BiMenuAltRight } from "react-icons/bi";
 import { FaUserCircle } from "react-icons/fa";
@@ -6,8 +6,9 @@ import Link from "next/link";
 
 import { motion } from "framer-motion";
 const Nav = () => {
+  const [isClick, setIsClick] = useState(false);
   return (
-    <div className="h-[83px] flex justify-around items-center">
+    <div className="h-[83px] flex justify-around items-center relative">
       <h1 className="font-rubik text-[25px] leading-[30.26px] text-[#FFC222]">
         <Link href="/">Restuarant</Link>
       </h1>
@@ -53,8 +54,38 @@ const Nav = () => {
           borderRadius: "50%",
         }}
         className="lg:hidden rounded-full cursor-pointer"
+        onClick={() => setIsClick(!isClick)}
       >
-        <BiMenuAltRight className="w-[30px] h-[30px]" />
+        <BiMenuAltRight className="w-[30px] h-[30px] pointer-events-none" />
+      </motion.div>
+      <motion.div
+        initial={{ x: 500 }}
+        animate={isClick ? { x: 0 } : { x: 500 }}
+        transition={{ duration: 2 }}
+        className={`absolute top-[5rem] lg:hidden  shadow-md z-[1000]  rounded-b-lg ${
+          isClick ? "block" : "hidden"
+        } right-0 w-[50%] h-fit py-3 bg-white `}
+      >
+        <Link href="/">
+          <a className="py-3 px-4 block text-[18px] w-[100%] font-[600]  focus:bg-green focus:text-white">
+            Home
+          </a>
+        </Link>
+        <Link href="/products">
+          <a className="py-3 px-4 block text-[18px] w-[100%] font-[600]  focus:bg-green focus:text-white">
+            Product
+          </a>
+        </Link>
+        <Link href="/about">
+          <a className="py-3 px-4 block text-[18px] w-[100%] font-[600]  focus:bg-green focus:text-white">
+            About
+          </a>
+        </Link>
+        <Link href="/contact">
+          <a className="py-3 px-4 block text-[18px] w-[100%] font-[600]  focus:bg-green focus:text-white">
+            Contact
+          </a>
+        </Link>
       </motion.div>
     </div>
   );
